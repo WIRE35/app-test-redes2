@@ -4,7 +4,7 @@ const parcial1 = {
   "tests": [
     {
       "id": "examen-propio-2025",
-      "nombre": "Test 1 - Mi examen de 2025",
+      "nombre": "Test 1.1 2025",
       "preguntas": [
         {
           "question": "El Par Trenzado se usa para frecuencias",
