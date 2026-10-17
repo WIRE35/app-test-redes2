@@ -919,6 +919,312 @@ const tema2 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t2-4",
+      "nombre": "Test T2.4 - Rendimiento y Ethernet conmutada",
+      "preguntas": [
+        {
+          "question": "¿Por qué influye la longitud máxima del cable en el rendimiento de Ethernet compartida?",
+          "answers": [
+            "Porque determina la dirección MAC",
+            "Porque aumenta el tiempo de propagación y el intervalo de contienda",
+            "Porque reduce el tamaño de la cabecera IP",
+            "Porque elimina las retransmisiones"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si dos estaciones están más alejadas en una Ethernet compartida, ¿qué ocurre con el retardo de propagación?",
+          "answers": [
+            "Disminuye",
+            "Se mantiene necesariamente en cero",
+            "Aumenta",
+            "Depende solo del tamaño del disco"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es el tiempo máximo aproximado que puede transcurrir hasta detectar una colisión en el caso extremo descrito en los apuntes?",
+          "answers": [
+            "τ/2",
+            "τ",
+            "4τ",
+            "2τ"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué representa τ en el análisis del intervalo de contienda de Ethernet?",
+          "answers": [
+            "El tiempo de propagación en un sentido",
+            "La tasa de transmisión",
+            "El tamaño mínimo de la trama",
+            "El número de puertos del switch"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué relación existe entre una mayor distancia entre estaciones y el intervalo de contienda?",
+          "answers": [
+            "Una mayor distancia tiende a ampliarlo",
+            "La distancia no afecta nunca",
+            "Una mayor distancia lo hace negativo",
+            "La distancia sustituye al protocolo MAC"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En el análisis de rendimiento de Ethernet, ¿qué magnitud representa F?",
+          "answers": [
+            "La frecuencia del procesador",
+            "La longitud de trama",
+            "El número de routers",
+            "El número de dominios de difusión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En la formulación del rendimiento Ethernet, ¿qué magnitud representa B?",
+          "answers": [
+            "El número de bridges",
+            "El tamaño del búfer",
+            "El ancho de banda de la red",
+            "La longitud del cable"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En la formulación del rendimiento Ethernet, ¿qué magnitud representa L?",
+          "answers": [
+            "El tiempo de propagación",
+            "La longitud del cable",
+            "El número de estaciones activas",
+            "La longitud de la dirección MAC"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En la formulación del rendimiento Ethernet, ¿qué representa c?",
+          "answers": [
+            "La velocidad de propagación de la señal",
+            "La capacidad del disco",
+            "El número de colisiones",
+            "El tamaño de la cabecera"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si se mantiene la distancia y aumenta la velocidad de transmisión B, ¿qué pasa con el tiempo necesario para transmitir una trama de F bits?",
+          "answers": [
+            "Aumenta siempre",
+            "No cambia nunca",
+            "Disminuye",
+            "Se convierte en el retardo de propagación"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué relación expresa el tiempo de transmisión de una trama de F bits a una tasa B?",
+          "answers": [
+            "F/B",
+            "B/F",
+            "F×B",
+            "2B/F"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué aproximación corresponde al retardo de propagación en un cable de longitud L con velocidad c?",
+          "answers": [
+            "L×c",
+            "L/c",
+            "c/L",
+            "F/B"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En una Ethernet compartida con un hub, ¿qué sucede al conectar más estaciones activas?",
+          "answers": [
+            "Se crea un canal independiente para cada estación",
+            "El hub multiplica la capacidad total",
+            "Puede reducirse el rendimiento disponible por estación",
+            "Desaparecen las colisiones por completo"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Por qué un hub no mejora por sí solo la capacidad de una Ethernet compartida?",
+          "answers": [
+            "Porque funciona como un medio compartido equivalente al cable único",
+            "Porque convierte automáticamente Ethernet en Wi-Fi",
+            "Porque asigna una VLAN por puerto",
+            "Porque enruta cada paquete por IP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué ventaja de cableado introduce la topología física en estrella frente al coaxial compartido?",
+          "answers": [
+            "Obliga a apagar toda la red al añadir un equipo",
+            "Facilita añadir o retirar estaciones",
+            "Elimina la necesidad de cables",
+            "Impide usar switches"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es la función esencial de un switch Ethernet frente a un hub?",
+          "answers": [
+            "Amplificar siempre hacia todos los puertos",
+            "Traducir direcciones IPv4 en nombres DNS",
+            "Seleccionar el puerto de salida adecuado para las tramas",
+            "Sustituir las direcciones MAC por números de teléfono"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué información necesita aprender un switch para reenviar selectivamente una trama?",
+          "answers": [
+            "La dirección MAC asociada a cada puerto",
+            "La contraseña del usuario",
+            "La velocidad del ventilador",
+            "El nombre de la aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En una red con switch y enlaces punto a punto full-duplex, ¿qué ocurre con las colisiones Ethernet?",
+          "answers": [
+            "Son obligatorias en cada trama",
+            "No se producen por contienda del medio compartido",
+            "Aumentan con cada puerto",
+            "Se detectan mediante ARP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué diferencia fundamental existe entre un hub y un switch en cuanto al tráfico recibido?",
+          "answers": [
+            "El hub filtra por IP; el switch nunca filtra",
+            "Ambos transmiten exclusivamente por radio",
+            "El hub repite la señal; el switch decide el reenvío según la trama",
+            "El switch no recibe tramas Ethernet"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es una consecuencia de dedicar un enlace físico a cada estación en una Ethernet conmutada?",
+          "answers": [
+            "Cada estación deja de compartir necesariamente el mismo segmento físico de colisión",
+            "Todos los equipos usan el mismo cable coaxial",
+            "Se pierde la posibilidad de conectar nuevos equipos",
+            "Las direcciones MAC dejan de existir"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Por qué se presenta la conmutación como solución al aumento de demanda de ancho de banda?",
+          "answers": [
+            "Porque el switch reduce toda la red a 1 Mbps",
+            "Porque permite separar el tráfico entre enlaces y evitar compartir un único canal",
+            "Porque elimina el protocolo Ethernet",
+            "Porque sustituye las tramas por señales analógicas sin control"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué ventaja adicional mencionan los apuntes al hablar del uso de switches?",
+          "answers": [
+            "Eliminación de todas las direcciones IP",
+            "Ausencia de necesidad de alimentación",
+            "Beneficios de seguridad",
+            "Desaparición de cualquier broadcast"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una oficina cambia un hub por un switch sin aumentar la velocidad nominal de los enlaces. ¿Qué mejora puede conseguir?",
+          "answers": [
+            "Menor contienda al separar enlaces de los equipos",
+            "Mayor diámetro de cable coaxial obligatorio",
+            "Conversión automática a fibra óptica",
+            "Una sola colisión por segundo garantizada"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En una Ethernet compartida, ¿qué efecto tiene que dos estaciones intenten transmitir a la vez?",
+          "answers": [
+            "Se fusionan automáticamente ambas tramas",
+            "Puede producirse una colisión y ser necesaria una retransmisión",
+            "El router incrementa la TTL",
+            "La trama se convierte en un datagrama IP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál de estos factores puede empeorar el rendimiento de Ethernet clásica al aumentar?",
+          "answers": [
+            "La eficiencia de la codificación de texto",
+            "La memoria RAM de los hosts",
+            "El tiempo perdido en contienda y colisiones",
+            "El número de puertos USB"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Si una trama es muy corta y el retardo de propagación es relativamente alto, ¿qué problema puede aparecer en un medio compartido?",
+          "answers": [
+            "La contienda representa una fracción importante del tiempo útil",
+            "La trama no necesita dirección MAC",
+            "La velocidad de propagación supera la luz",
+            "Se desactiva la capa de enlace"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál de las siguientes afirmaciones describe mejor una topología física en estrella con hub?",
+          "answers": [
+            "Cada puerto forma siempre un dominio de colisión independiente",
+            "La disposición física es estrella, pero el medio sigue siendo compartido",
+            "No existe tráfico entre estaciones",
+            "Se requiere un router en cada puerto"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál de las siguientes afirmaciones describe mejor una estrella con switch?",
+          "answers": [
+            "Todos los puertos actúan como un único cable coaxial",
+            "No es posible reenviar tramas unicast",
+            "El dispositivo central puede conmutar tramas hacia puertos específicos",
+            "Los enlaces no transportan tramas Ethernet"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Si el tiempo de transmisión F/B disminuye pero el retardo de propagación L/c permanece, ¿qué parte gana peso relativo en una Ethernet compartida?",
+          "answers": [
+            "El retardo de propagación y la contienda",
+            "La longitud de la contraseña",
+            "La capacidad del disco",
+            "La frecuencia de refresco del monitor"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué idea resume el apartado de rendimiento y Ethernet conmutada del Tema 2?",
+          "answers": [
+            "La distancia y las colisiones condicionan el medio compartido; la conmutación mejora su aprovechamiento",
+            "Los hubs garantizan ancho de banda exclusivo por estación",
+            "La Ethernet conmutada requiere siempre cable coaxial grueso",
+            "La longitud de cable no tiene ninguna influencia física"
+          ],
+          "correct": 0
+        }
+      ]
     }
   ]
 };
