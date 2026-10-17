@@ -1645,6 +1645,412 @@ const parcial1 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "test-1-5-2025",
+      "nombre": "Test 1.5 - 2025",
+      "preguntas": [
+        {
+          "question": "Las redes telefónicas son un ejemplo de:",
+          "answers": [
+            "Conmutación de circuitos",
+            "Ninguna de las anteriores",
+            "Conmutación de circuitos en modo datagrama",
+            "Conmutación de paquetes en modo Circuito Virtual"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un protocolo libre de colisiones que utiliza la misma topología y nivel físico que FastEthernet es:",
+          "answers": [
+            "Token Bus",
+            "Ninguna de las anteriores",
+            "FDDI",
+            "Token Ring"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Respecto al switch, indica la afirmación errónea:",
+          "answers": [
+            "En un switch, si no conoce el puerto de destino, activa el ARP para su resolución",
+            "Un Switch/Puente segmenta el Dominio de Colisión",
+            "Un Switch/Puente expande el Dominio de Difusión",
+            "Los conmutadores Fragment Free esperan a recibir los primeros 64 bytes para evitar retransmisión de colisiones"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Definiremos un dominio de colisión como ....",
+          "answers": [
+            "El área de una red, formada por computadoras y dispositivos de red que se puede alcanzar enviando una trama multicast.",
+            "El área de una red, formada por repetidores que se puede alcanzar enviando una trama broadcast.",
+            "Ninguna de las anteriores",
+            "El área de una red, formada por computadoras y dispositivos de red que se puede alcanzar enviando una trama broadcast"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El modo de funcionamiento de un switch más utilizado en redes corporativas que implementan siempre el control de errores es:",
+          "answers": [
+            "Cut-Through",
+            "Adaptative Cut-Through",
+            "Ninguna de las anteriores",
+            "Store-and-Forward"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En Ethernet Clásico, el cableado que difiere en cuanto a topología física del resto es:",
+          "answers": [
+            "10BASE2",
+            "100BASE-T",
+            "10BASE-T",
+            "10BASE5"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En los protocolos CSMA/CD se define un estado adicional frente a los protocolos ALOHA, indica cual es:",
+          "answers": [
+            "Transmisión",
+            "Recepción",
+            "Ninguna de las anteriores",
+            "Espera"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El protocolo IP es un ejemplo de",
+          "answers": [
+            "Conmutación de paquetes en modo Circuito Virtual",
+            "Conmutación de paquetes en modo Datagrama",
+            "Ninguna de las anteriores",
+            "Conmutación de circuitos en modo Datagrama"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Indica el número de bits de host de una dirección IPv4 de clase A",
+          "answers": [
+            "16",
+            "24",
+            "8",
+            "32"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "El medio de transmisión recomendado para FastEthernet es:",
+          "answers": [
+            "UTP Categoría 5E y 6",
+            "UTP Categoría 3",
+            "UTP Categoría 4",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "El protocolo X25 es un ejemplo de protocolo de nivel ...",
+          "answers": [
+            "Transporte",
+            "Físico",
+            "Red",
+            "Enlace"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El repetidor es considerado un dispositivo de nivel",
+          "answers": [
+            "Ninguna de las anteriores",
+            "Red",
+            "LLC",
+            "Control de Acceso al Medio"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Indica el número de bits de host de una dirección IPv4 de clase B",
+          "answers": [
+            "32",
+            "8",
+            "16",
+            "24"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El Par Trenzado se usa para frecuencias",
+          "answers": [
+            "Superiores a VHF",
+            "Inferiores a ELF",
+            "Inferiores a UHF",
+            "Superiores a UHF"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "De forma general, las redes más pequeñas localizadas en una misma área geográfica tienden a utilizar:",
+          "answers": [
+            "Enlaces de difusión",
+            "Ninguna de las anteriores",
+            "Enlaces en anillo",
+            "Enlaces de punto a punto"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si la estación A con IP 126.25.25.23/23 realiza un ping a B con IP 126.25.26.1/23...",
+          "answers": [
+            "Ninguna de las anteriores",
+            "Sería entrega directa",
+            "Sería entrega indirecta, por lo que se enviaría al Router",
+            "No se puede enviar el datagrama por ser una IP de destino errónea"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "El campo en IPv4 que indica la posición del fragmento dentro del datagrama original se denomina",
+          "answers": [
+            "Offset",
+            "MF",
+            "ID",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "El protocolo SONET es un ejemplo de protocolo aplicado a redes:",
+          "answers": [
+            "WAN",
+            "LAN",
+            "PAN",
+            "MAN"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "De las siguientes topologías, indica cual de ellas es más robusta frente a la caída de enlaces:",
+          "answers": [
+            "Estrella",
+            "Anillo",
+            "Malla",
+            "Bus"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Indica cuál de los siguientes está identificado como un protocolo de Red",
+          "answers": [
+            "LAPB",
+            "Ninguno de los anteriores",
+            "TCP",
+            "X.25"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un switch proporciona un ancho de banda de, por ejemplo, 100Mbps, como:",
+          "answers": [
+            "Ninguna de las anteriores",
+            "Compartido",
+            "Dedicado",
+            "Mínimo"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Los protocolos ATM o SONET son ejemplos de protocolos enfocados en redes de tipo:",
+          "answers": [
+            "Ninguna de las anteriores",
+            "LAN",
+            "PAN",
+            "MAN"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "La longitud máxima de 10Gigabit Ethernet con UTP de categoría 5 es:",
+          "answers": [
+            "100m",
+            "20m",
+            "15m",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "El repetidor es considerado un dispositivo de nivel",
+          "answers": [
+            "Control de Acceso al Medio",
+            "Red",
+            "Físico",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El protocolo X25 es un ejemplo de protocolo de nivel ...",
+          "answers": [
+            "Transporte",
+            "Físico",
+            "Ninguna de las anteriores",
+            "Enlace"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En enlaces de difusión con medio compartido, indica cual de los siguientes NO es un supuesto clave para la utilización del canal:",
+          "answers": [
+            "Supuesto de canal único.",
+            "Tráfico dependiente entre las estaciones",
+            "Tiempo continuo o ranurado",
+            "Colisiones observables"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Respecto a Gigabit Ethernet, indica la afirmación errónea:",
+          "answers": [
+            "Modifica el formato de trama, aumentando el tamaño máximo",
+            "Usa el mismo esquema de direccionamiento de 48 bits que ya está en uso",
+            "Aumenta diez veces el rendimiento de Fast Ethernet.",
+            "Fue aprobada por el IEEE en 1998 bajo el nombre 802.3z."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En el modelo TCP/IP para LAN, indica cual es el nuevo nivel definido con respecto a OSI:",
+          "answers": [
+            "Acceso al medio",
+            "Ninguna de las anteriores",
+            "Enlace de datos",
+            "Transporte"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "El tiempo en el que una estación no puede garantizar que no ha sufrido colisión en su transmisión se denomina:",
+          "answers": [
+            "Ninguna de las anteriores",
+            "Intervalo de contienda",
+            "Intervalo de compresión",
+            "Intervalo de control"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Indica cual de los siguientes NO es uno de los principios definidos para la creación del modelo OSI:",
+          "answers": [
+            "La función de cada capa se debe elegir con la intención de definir protocolos estandarizados internacionalmente.",
+            "Los límites de las capas se deben elegir a fin de minimizar el flujo de información a través de las interfaces.",
+            "La cantidad de capas debe ser suficientemente pequeña para no tener que agrupar funciones distintas en la misma capa y lo bastante grande para que la arquitectura no se vuelva inmanejable.",
+            "Cada capa debe realizar una(s) función(es) bien definida(s)."
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En ethernet clásica, para la detección de colisiones, indica la afirmación errónea:",
+          "answers": [
+            "Todas son erróneas (menos ésta)",
+            "Si aumentamos el ancho de banda, tendríamos que aumentar la longitud de la trama y/o reducir la longitud del medio de transmisión",
+            "Si aumentamos el ancho de banda, tendríamos que aumentar la longitud de la trama y/o aumentar la longitud del medio de transmisión",
+            "Si aumentamos el ancho de banda, tendríamos que reducir la longitud de la trama y/o reducir la longitud del medio de transmisión"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Definiremos un dominio de colisión como ....",
+          "answers": [
+            "un segmento físico de una red de computadores donde es posible que las tramas puedan 'colisionar' con otras.",
+            "Ninguna de las anteriores",
+            "el área de una red, formada por computadoras y dispositivos de red que se puede alcanzar enviando una trama broadcast",
+            "el área de una red, formada por computadoras y dispositivos de red que se puede alcanzar enviando una trama multicast."
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Respecto al switch, indica la afirmación errónea:",
+          "answers": [
+            "En un switch, si no conoce el puerto de destino, realiza inundación",
+            "Un Switch/Puente segmenta el Dominio de Colisión",
+            "Los conmutadores Fragment Free esperan a recibir los primeros 1500 bytes para evitar retransmisión de colisiones",
+            "Un Switch/Puente expande el Dominio de Difusión"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "La longitud máxima del segmento en FastEthernet con par trenzado es:",
+          "answers": [
+            "500m",
+            "200m",
+            "100m",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El tipo de Switch que espera a recibir los primeros 64 bytes para evitar la retransmisión de colisiones se denomina:",
+          "answers": [
+            "Cut-Through",
+            "Store-and-Forward",
+            "Ninguna de las anteriores",
+            "FragmentFree"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un hub proporciona un ancho de banda de, por ejemplo, 100Mbps, como:",
+          "answers": [
+            "Ninguna de las anteriores",
+            "Exclusivo",
+            "Compartido",
+            "Dedicado"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Las redes de comunicaciones de fibra que se están extendiendo en las ciudades se clasifican como redes:",
+          "answers": [
+            "WAN",
+            "LAN",
+            "MAN",
+            "Ninguna de las anteriores"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Indica cuál de las siguientes direcciones es una dirección de IPv4 privada:",
+          "answers": [
+            "127.0.0.1",
+            "152.32.12.0",
+            "172.17.22.13",
+            "Todas son dirección públicas"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El protocolo que permite obtener la dirección lógica a partir de la dirección física se denomina:",
+          "answers": [
+            "Ninguna de las anteriores",
+            "DHCP",
+            "RARP",
+            "ARP"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "De las siguientes topologías, indica cual de ellas es más sensible al cuello de botella:",
+          "answers": [
+            "Anillo",
+            "Malla",
+            "Mixta",
+            "Estrella"
+          ],
+          "correct": 3
+        }
+      ]
     }
   ]
 };
