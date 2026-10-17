@@ -613,6 +613,313 @@ const tema3 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t3-3",
+      "nombre": "Test T3.3 - Routers, direccionamiento IP y ARP",
+      "preguntas": [
+        {
+          "question": "¿En qué capa del modelo OSI opera principalmente un router al encaminar paquetes IP?",
+          "answers": [
+            "Física",
+            "Enlace de datos",
+            "Red",
+            "Aplicación"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué información utiliza un router para elegir el siguiente salto de un datagrama IP?",
+          "answers": [
+            "Tabla de encaminamiento",
+            "Tabla de direcciones MAC del switch",
+            "Nombre del archivo transmitido",
+            "Número de puerto USB"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la unidad básica de transferencia del protocolo IP?",
+          "answers": [
+            "Bit de sincronismo",
+            "Datagrama",
+            "Trama Ethernet",
+            "Token"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué característica describe el servicio ofrecido por IP?",
+          "answers": [
+            "Garantiza entrega ordenada",
+            "Establece siempre un circuito previo",
+            "Servicio sin conexión y sin garantía de entrega",
+            "Reserva ancho de banda antes de transmitir"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Para qué se incorpora direccionamiento IP además de las direcciones MAC?",
+          "answers": [
+            "Para identificar redes y facilitar el encaminamiento entre ellas",
+            "Para sustituir la señal eléctrica del cable",
+            "Para eliminar la necesidad de routers",
+            "Para asignar una MAC diferente a cada aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuántos bits tiene una dirección IPv4?",
+          "answers": [
+            "16",
+            "32",
+            "48",
+            "128"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuántos octetos componen la representación decimal habitual de IPv4?",
+          "answers": [
+            "Dos",
+            "Tres",
+            "Cuatro",
+            "Seis"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué dos partes identifica una dirección IPv4 junto con su máscara?",
+          "answers": [
+            "Puerto y protocolo",
+            "Red y host",
+            "Origen y TTL",
+            "MAC y CRC"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué máscara corresponde a un prefijo IPv4 /24?",
+          "answers": [
+            "255.255.0.0",
+            "255.0.0.0",
+            "255.255.255.0",
+            "255.255.255.128"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué longitud de prefijo corresponde a la máscara 255.255.0.0?",
+          "answers": [
+            "/8",
+            "/16",
+            "/24",
+            "/32"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué diferencia principal presentan las redes classless frente a las full-class descritas en los apuntes?",
+          "answers": [
+            "Usan máscaras de longitud variable",
+            "No utilizan direcciones IP",
+            "Solo permiten redes clase A",
+            "No necesitan identificar la red"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál de estas direcciones pertenece a un bloque privado RFC 1918?",
+          "answers": [
+            "8.8.8.8",
+            "172.20.5.4",
+            "172.32.0.1",
+            "193.18.1.10"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es el intervalo privado del bloque 192.168.0.0/16?",
+          "answers": [
+            "192.168.0.0 a 192.168.255.255",
+            "192.0.0.0 a 192.255.255.255",
+            "192.168.0.0 a 192.168.0.255",
+            "192.169.0.0 a 192.169.255.255"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué bloque privado abarca direcciones desde 172.16.0.0 hasta 172.31.255.255?",
+          "answers": [
+            "172.16.0.0/12",
+            "172.16.0.0/16",
+            "172.0.0.0/8",
+            "172.31.0.0/24"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la función esencial del protocolo ARP en una LAN IPv4?",
+          "answers": [
+            "Convertir un nombre DNS en IP",
+            "Obtener la dirección MAC asociada a una dirección IP",
+            "Seleccionar la ruta entre dos sistemas autónomos",
+            "Comprimir datagramas"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cómo se envía normalmente una solicitud ARP en una LAN Ethernet?",
+          "answers": [
+            "En difusión a FF:FF:FF:FF:FF:FF",
+            "En unicast a la MAC desconocida",
+            "Siempre al servidor DNS",
+            "Como mensaje TCP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Quién responde normalmente a una solicitud ARP que pregunta por la MAC de una IP local?",
+          "answers": [
+            "Todos los equipos con un ACK",
+            "El host propietario de esa IP",
+            "El switch de acceso en todos los casos",
+            "El servidor web remoto"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cómo suele enviarse una respuesta ARP al equipo que preguntó?",
+          "answers": [
+            "En unicast a su dirección MAC",
+            "Siempre en difusión a toda Internet",
+            "Por una sesión HTTPS",
+            "Mediante un datagrama ICMP de error"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué valor EtherType identifica ARP en una trama Ethernet?",
+          "answers": [
+            "0x0800",
+            "0x86DD",
+            "0x0806",
+            "0x8100"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué valor EtherType identifica IPv4 en una trama Ethernet?",
+          "answers": [
+            "0x0800",
+            "0x0806",
+            "0x8847",
+            "0x88CC"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Para qué sirve la caché ARP?",
+          "answers": [
+            "Guardar temporalmente asociaciones IP-MAC",
+            "Almacenar contraseñas de usuarios",
+            "Asignar nuevas IP públicas",
+            "Conservar rutas BGP indefinidamente"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si dos equipos pertenecen a la misma red IP y pueden comunicarse directamente, ¿qué MAC de destino lleva la trama?",
+          "answers": [
+            "La del router de salida siempre",
+            "La del host destino",
+            "La de difusión obligatoriamente",
+            "La del servidor DHCP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si un host envía un datagrama a otra red IP, ¿qué MAC de destino suele poner en la primera trama Ethernet?",
+          "answers": [
+            "La del host remoto",
+            "La del servidor DNS",
+            "La de su puerta de enlace o router local",
+            "La del switch de la red remota"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En el envío a otra red, ¿qué dirección IP de destino contiene el datagrama que sale del host?",
+          "answers": [
+            "La IP del host remoto",
+            "La IP del router local como destino final",
+            "La IP del switch",
+            "La IP de difusión local"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué se consulta primero para decidir si el destino IPv4 está en la misma red local?",
+          "answers": [
+            "La máscara de red junto con las direcciones IP",
+            "El CRC de la trama",
+            "La tabla de puertos TCP abiertos",
+            "El número de serie del router"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un equipo 192.168.10.20/24 quiere contactar con 192.168.10.80/24. ¿Qué tipo de comunicación IP corresponde?",
+          "answers": [
+            "Diálogo directo dentro de la misma red",
+            "Diálogo indirecto obligatorio vía Internet",
+            "Necesita un NAT para alcanzar al destino",
+            "No es posible por pertenecer a subredes diferentes"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un equipo 192.168.10.20/24 quiere contactar con 192.168.11.80/24. ¿Qué necesita normalmente?",
+          "answers": [
+            "Solo un repetidor de nivel físico",
+            "Enviar al router o puerta de enlace",
+            "Usar la MAC del destino remoto directamente",
+            "Cambiar a una dirección de difusión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es el identificador de red de 157.42.4.2 con máscara 255.255.0.0?",
+          "answers": [
+            "157.42.0.0",
+            "157.0.0.0",
+            "157.42.4.0",
+            "157.42.4.2"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué consecuencia tiene que IP sea un servicio de datagramas sin conexión?",
+          "answers": [
+            "Los datagramas pueden seguir rutas distintas y llegar desordenados",
+            "Todos los datagramas deben atravesar idéntico circuito reservado",
+            "Cada router garantiza la entrega de todos los paquetes",
+            "Las direcciones MAC sustituyen por completo a las IP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué elemento permite a un router interconectar redes de tecnologías distintas?",
+          "answers": [
+            "Sus interfaces de red y el encaminamiento IP",
+            "Una única dirección MAC compartida por todos los hosts",
+            "Un cable coaxial obligatorio",
+            "Un concentrador que repite todos los bits"
+          ],
+          "correct": 0
+        }
+      ]
     }
+
   ]
 };
