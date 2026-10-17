@@ -919,7 +919,312 @@ const tema3 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t3-4",
+      "nombre": "Test T3.4 - Fragmentación IP, subnetting y supernetting",
+      "preguntas": [
+        {
+          "question": "¿Qué representa la MTU de una red física?",
+          "answers": [
+            "El número máximo de routers de una ruta",
+            "El tamaño máximo de la unidad de datos que puede transportar el enlace",
+            "La cantidad máxima de direcciones MAC de un switch",
+            "El tiempo máximo de vida de un datagrama"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Según los apuntes, ¿cuál es la MTU habitual de Ethernet para un datagrama IP?",
+          "answers": [
+            "1500 bytes",
+            "64 bytes",
+            "576 bytes",
+            "9000 bytes"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un datagrama IP de 1400 bytes atraviesa un enlace de MTU 1500. ¿Qué ocurre por tamaño?",
+          "answers": [
+            "Se divide siempre en dos fragmentos",
+            "Se descarta aunque DF sea 0",
+            "Se divide en tres fragmentos de 500 bytes",
+            "No necesita fragmentación"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué dispositivo puede fragmentar un datagrama IPv4 al pasar a una red de menor MTU?",
+          "answers": [
+            "Un repetidor de capa física",
+            "Un hub Ethernet",
+            "Un router intermedio",
+            "Un cable de par trenzado"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué campo permite reconocer fragmentos pertenecientes al mismo datagrama IPv4?",
+          "answers": [
+            "TTL",
+            "Identificación",
+            "Puerto TCP de destino",
+            "Dirección MAC de difusión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿En qué unidades se expresa el desplazamiento (Fragment Offset) en IPv4?",
+          "answers": [
+            "Bloques de 8 bytes",
+            "Bits individuales",
+            "Bloques de 64 bytes",
+            "Paquetes completos"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si un fragmento tiene desplazamiento 100, ¿a qué posición de los datos originales corresponde?",
+          "answers": [
+            "Byte 100",
+            "Byte 108",
+            "Byte 1600",
+            "Byte 800"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué indica el bit MF=1 de la cabecera IPv4?",
+          "answers": [
+            "Que no se permite fragmentar",
+            "Que es necesariamente el último fragmento",
+            "Que quedan más fragmentos del mismo datagrama",
+            "Que el TTL ha llegado a cero"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cómo se identifica normalmente el último fragmento de un datagrama IPv4?",
+          "answers": [
+            "Con DF=1 obligatoriamente",
+            "Con MF=0",
+            "Con offset=0 siempre",
+            "Con TTL=0"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si un datagrama tiene DF=1 y no cabe en la MTU del siguiente enlace, ¿qué debe hacer el router?",
+          "answers": [
+            "Descartarlo en lugar de fragmentarlo",
+            "Fragmentarlo ignorando DF",
+            "Cambiar su dirección IP de origen",
+            "Convertirlo automáticamente a IPv6"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Según el Tema 3, ¿dónde se realiza el reensamblado de fragmentos IPv4?",
+          "answers": [
+            "En cada switch de la ruta",
+            "En todos los routers intermedios",
+            "En el primer hub de la red",
+            "En el equipo de destino"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué sucede si no llegan todos los fragmentos antes de expirar el temporizador de reensamblado?",
+          "answers": [
+            "Se entrega un datagrama incompleto como válido",
+            "Se reenvían los fragmentos desde el switch",
+            "Se descartan los fragmentos recibidos de ese datagrama",
+            "Se asigna una nueva máscara de red"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un datagrama IPv4 tiene 2000 bytes de datos y cabecera de 20 bytes. Con MTU=1500, ¿cuántos fragmentos mínimos se necesitan?",
+          "answers": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En una MTU de 800 bytes y cabecera IPv4 de 20 bytes, ¿cuál es la carga útil máxima de un fragmento no final, respetando múltiplos de 8?",
+          "answers": [
+            "776 bytes",
+            "780 bytes",
+            "800 bytes",
+            "784 bytes"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un datagrama con 2000 bytes de datos y cabecera de 20 bytes atraviesa MTU=800. ¿Cuántos fragmentos se generan?",
+          "answers": [
+            "2",
+            "4",
+            "5",
+            "3"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En el ejemplo anterior (MTU=800), ¿cuáles son los desplazamientos de los tres fragmentos?",
+          "answers": [
+            "0, 776 y 1552",
+            "0, 100 y 200",
+            "0, 97 y 194",
+            "0, 97 y 185"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué máscara decimal corresponde al prefijo /24?",
+          "answers": [
+            "255.255.0.0",
+            "255.255.255.0",
+            "255.255.255.128",
+            "255.255.255.192"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué máscara decimal corresponde al prefijo /26?",
+          "answers": [
+            "255.255.255.192",
+            "255.255.255.0",
+            "255.255.255.224",
+            "255.255.255.240"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la dirección de red de 192.168.10.77/26?",
+          "answers": [
+            "192.168.10.0",
+            "192.168.10.77",
+            "192.168.10.128",
+            "192.168.10.64"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Cuál es la dirección de difusión de la subred 192.168.10.64/26?",
+          "answers": [
+            "192.168.10.63",
+            "192.168.10.128",
+            "192.168.10.127",
+            "192.168.10.255"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuántas direcciones de host utilizables tiene normalmente una subred IPv4 /27?",
+          "answers": [
+            "32",
+            "30",
+            "62",
+            "14"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuántas subredes /18 se obtienen al dividir 131.107.0.0/16 usando dos bits adicionales de subred?",
+          "answers": [
+            "4",
+            "2",
+            "8",
+            "16"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál de estas redes pertenece al reparto de 131.107.0.0/16 en cuatro subredes /18?",
+          "answers": [
+            "131.107.32.0/18",
+            "131.107.16.0/18",
+            "131.107.224.0/18",
+            "131.107.128.0/18"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué significa subnetting en el contexto del direccionamiento IPv4?",
+          "answers": [
+            "Unir varias redes en una sola ruta resumida",
+            "Sustituir ARP por DHCP",
+            "Dividir una red IP en subredes más pequeñas",
+            "Eliminar los bits de red de una máscara"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es la finalidad principal del supernetting o agregación de rutas?",
+          "answers": [
+            "Crear más colisiones Ethernet",
+            "Agrupar prefijos para reducir entradas de encaminamiento",
+            "Fragmentar los datagramas en cada router",
+            "Asignar una MAC idéntica a todos los hosts"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué ventaja aporta CIDR frente al direccionamiento estrictamente por clases?",
+          "answers": [
+            "Utilizar prefijos de longitud variable y favorecer la agregación de rutas",
+            "Obligar a todas las redes a usar /8",
+            "Eliminar la necesidad de direcciones IP",
+            "Impedir el uso de routers"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué prefijo resume exactamente las redes 192.168.0.0/24 y 192.168.1.0/24?",
+          "answers": [
+            "192.168.0.0/25",
+            "192.168.0.0/24",
+            "192.168.0.0/22",
+            "192.168.0.0/23"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Una red /24 se divide en subredes /28. ¿Cuántas subredes del mismo tamaño se obtienen?",
+          "answers": [
+            "8",
+            "14",
+            "16",
+            "32"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué prefijo IPv4 permite normalmente 62 hosts utilizables por subred?",
+          "answers": [
+            "/27",
+            "/26",
+            "/25",
+            "/28"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si una empresa necesita subredes de distintos tamaños, ¿qué técnica permite ajustar la máscara a cada necesidad?",
+          "answers": [
+            "VLSM (máscaras de subred de longitud variable)",
+            "CSMA/CD",
+            "Codificación Manchester",
+            "Inundación de tramas"
+          ],
+          "correct": 0
+        }
+      ]
     }
-
   ]
 };
