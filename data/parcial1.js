@@ -2051,6 +2051,412 @@ const parcial1 = {
           "correct": 3
         }
       ]
+    },
+    {
+      "id": "test-1-6-2026",
+      "nombre": "Test 1.6 - 2026",
+      "preguntas": [
+        {
+          "question": "Los protocolos de acceso al medio como ALOHA o CSMA pertenecen a:",
+          "answers": [
+            "Capa de Red",
+            "Capa de Sesión",
+            "Subcapa MAC (enlace de datos)",
+            "Capa de Transporte"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "10Base-T utiliza como medio físico:",
+          "answers": [
+            "Coaxial grueso",
+            "Fibra óptica monomodo",
+            "Coaxial fino",
+            "Par trenzado"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Los hubs:",
+          "answers": [
+            "Operan como routers",
+            "Expanden dominios de colisión y difusión",
+            "Bloquean difusiones",
+            "Dividen dominios de colisión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es un bloque privado válido?",
+          "answers": [
+            "10.0.0.0/8",
+            "172.32.0.0/12",
+            "198.51.100.0/24",
+            "192.0.2.0/24"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "La función principal de la capa de enlace de datos es:",
+          "answers": [
+            "Enrutamiento extremo a extremo",
+            "Definir sesiones",
+            "Proveer un canal libre de errores entre nodos adyacentes",
+            "Cifrado de aplicación"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un hub opera en la capa:",
+          "answers": [
+            "Transporte",
+            "Red",
+            "Enlace",
+            "Física"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Una variante de Gigabit Ethernet sobre cobre es:",
+          "answers": [
+            "10GBase-SR",
+            "1000Base-T",
+            "1000Base-SX",
+            "10GBase-ER"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué topología física se caracteriza por tener un nodo central al que se\nconectan los demás?",
+          "answers": [
+            "Anillo",
+            "Malla",
+            "Estrella",
+            "Árbol"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué máscara corresponde a /16?",
+          "answers": [
+            "255.255.0.0",
+            "255.255.255.0",
+            "255.255.255.252",
+            "255.0.0.0"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Los routers:",
+          "answers": [
+            "No afectan a dominios",
+            "Solo dividen colisión",
+            "Dividen dominios de difusión y colisión",
+            "Expanden dominios de difusión"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "ARP se utiliza para:",
+          "answers": [
+            "Enrutar paquetes entre redes",
+            "Resolver MAC a IP de forma autoritativa",
+            "Resolver IP a MAC",
+            "Configurar máscaras de subred"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "El par trenzado UTP categoría 5/5e/6 se utiliza típicamente para:",
+          "answers": [
+            "Únicamente conexiones coaxiales",
+            "Telefonía analógica únicamente",
+            "Fast Ethernet y/o Gigabit Ethernet",
+            "Enlaces satelitales"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un router opera en la capa:",
+          "answers": [
+            "Enlace",
+            "Física",
+            "Red",
+            "Transporte"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un switch Ethernet opera en la capa:",
+          "answers": [
+            "Red (IP)",
+            "Física",
+            "Aplicación",
+            "Enlace (MAC)"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "El campo TTL en IP sirve para:",
+          "answers": [
+            "Limitar la vida de un datagrama y evitar bucles",
+            "Cifrar los datos",
+            "Elegir protocolo superior",
+            "Indicar el tamaño total"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "La fragmentación de datagramas IP ocurre típicamente en:",
+          "answers": [
+            "Hosts origen siempre",
+            "Switches",
+            "Routers cuando la MTU del siguiente enlace es menor",
+            "Aplicación"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "IP proporciona un servicio:",
+          "answers": [
+            "Con conexión y ordenado",
+            "Con confirmaciones estrictas",
+            "Sin conexión y sin garantía de entrega",
+            "Orientado a conexión con garantías"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una característica de los enlaces de difusión es que:",
+          "answers": [
+            "Comparten un único canal de comunicación",
+            "No requieren campo de dirección",
+            "Siempre usan fibra óptica",
+            "Solo conectan dos máquinas"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "ALOHA ranurado duplica la capacidad de ALOHA puro porque:",
+          "answers": [
+            "Usa testigo (token)",
+            "Evita totalmente las colisiones",
+            "Utiliza detección de portadora",
+            "Sincroniza las transmisiones en intervalos de tiempo"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Una 'ruta por defecto' en una tabla de encaminamiento se utiliza para:",
+          "answers": [
+            "Enviar tráfico a redes no listadas explícitamente",
+            "Balancear carga entre VLANs",
+            "Bloquear difusiones",
+            "Descartar tráfico desconocido"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál de las siguientes corresponde a una Red de Área Metropolitana (MAN)?",
+          "answers": [
+            "Conexión entre países",
+            "Comunicaciones personales de 1 metro",
+            "Red dentro de un edificio de oficinas",
+            "Cobertura de una ciudad"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "El desplazamiento de fragmento (fragment offset) se mide en:",
+          "answers": [
+            "Bytes",
+            "Múltiplos de 8 bytes",
+            "Palabras de 32 bits",
+            "Bits"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En Ethernet clásica, CSMA/CD permite:",
+          "answers": [
+            "Detección de colisiones leyendo lo transmitido",
+            "Evitar colisiones completamente",
+            "Enrutamiento por hardware",
+            "Criptografía a nivel 2 obligatoria"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Una ventaja de 100Base-TX es:",
+          "answers": [
+            "Requiere Cat 3",
+            "No admite switches",
+            "Máximo 10 m de segmento",
+            "Full dúplex a 100 Mbps con Cat 5 UTP"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En 'store-and-forward' el switch:",
+          "answers": [
+            "Guarda toda la trama y valida CRC antes de reenviar",
+            "Reenvía al leer la MAC destino sin más",
+            "Nunca descarta tramas",
+            "Sólo reenvía los primeros 64 bytes"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un ARP request se envía a:",
+          "answers": [
+            "La dirección de difusión de capa 2",
+            "El router por defecto",
+            "Una dirección multicast IPv6",
+            "La MAC de destino conocida"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un dominio de colisión es:",
+          "answers": [
+            "Un segmento lógico VLAN",
+            "La tabla de MAC de un switch",
+            "El área donde tramas pueden colisionar al compartir medio",
+            "Un conjunto de redes IP con el mismo prefijo"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una ventaja clave de la fibra óptica frente al cobre es:",
+          "answers": [
+            "Menor ancho de banda",
+            "No permite largas distancias",
+            "Inmunidad a interferencias electromagnéticas",
+            "Mayor sensibilidad al ruido"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un beneficio clave de la Ethernet conmutada frente a hub es:",
+          "answers": [
+            "Requiere cable coaxial",
+            "Menos seguridad",
+            "Más colisiones",
+            "Ancho de banda dedicado por puerto"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "La codificación usada en Ethernet clásica es:",
+          "answers": [
+            "QAM-16",
+            "Manchester",
+            "NRZ",
+            "PAM5"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Cuando un switch recibe una trama, aprende:",
+          "answers": [
+            "MAC de origen y puerto de entrada",
+            "MAC de destino y puerto de salida",
+            "VLAN de destino",
+            "IP de origen y puerto"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "La unidad de datos en la capa física es:",
+          "answers": [
+            "Segmento",
+            "Trama",
+            "Paquete",
+            "Bit"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En conmutación de paquetes, cuando cada paquete se encamina de forma\nindependiente estamos ante:",
+          "answers": [
+            "Canal estático TDM",
+            "Datagrama",
+            "Conmutación de circuitos",
+            "Circuito virtual"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué técnica de conmutación requiere el establecimiento de un circuito\ndedicado durante toda la comunicación?",
+          "answers": [
+            "Modo datagrama",
+            "Conmutación por celdas sin conexión",
+            "Conmutación de circuitos",
+            "Conmutación de paquetes"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una trama con destino FF:FF:FF:FF:FF:FF se propaga en:",
+          "answers": [
+            "Todo el dominio de difusión",
+            "Un único puerto",
+            "Sólo dentro de una VLAN distinta",
+            "Sólo entre routers"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Los switches:",
+          "answers": [
+            "Expanden colisión y difusión",
+            "Dividen dominios de colisión y expanden difusión",
+            "Dividen ambos dominios",
+            "Dividen difusión y expanden colisión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Una dirección IPv4 tiene:",
+          "answers": [
+            "64 bits",
+            "32 bits",
+            "16 bits",
+            "48 bits"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "CSMA/CD puede estar en tres estados:",
+          "answers": [
+            "Listo, ejecución, bloqueo",
+            "Transmisión, contienda e inactivo",
+            "Envió, recepción y espera",
+            "Enlace, red y transporte"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "La primera Ethernet estandarizada (IEEE 802.3) operaba a:",
+          "answers": [
+            "3 Mbps",
+            "10 Mbps",
+            "100 Mbps",
+            "1 Mbps"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es la correspondencia correcta de unidad de datos-capa?",
+          "answers": [
+            "Trama–Enlace, Paquete–Red",
+            "Bit–Enlace, Trama–Físico",
+            "Paquete–Transporte, Bit–Red",
+            "Segmento–Red, Paquete–Transporte"
+          ],
+          "correct": 0
+        }
+      ]
     }
   ]
 };
