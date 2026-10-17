@@ -307,6 +307,312 @@ const tema1 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t1-2",
+      "nombre": "Test T1.2 - Medios de transmisión y modelo OSI",
+      "preguntas": [
+        {
+          "question": "En el modelo OSI, ¿qué capa se ocupa de las especificaciones del medio físico, los niveles de señal y los sincronismos?",
+          "answers": [
+            "Capa física",
+            "Capa de red",
+            "Capa de sesión",
+            "Capa de aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la unidad de datos de la capa física, según los apuntes?",
+          "answers": [
+            "Tramas",
+            "Paquetes",
+            "Mensajes de aplicación",
+            "Bits"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué capa del modelo OSI utiliza tramas como unidad de datos?",
+          "answers": [
+            "Red",
+            "Presentación",
+            "Enlace de datos",
+            "Transporte"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué capa OSI especifica el encaminamiento de los paquetes?",
+          "answers": [
+            "Presentación",
+            "Red",
+            "Física",
+            "Sesión"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿En qué capa OSI sitúan los apuntes al protocolo IP?",
+          "answers": [
+            "Capa 3, red",
+            "Capa 2, enlace",
+            "Capa 4, transporte",
+            "Capa 7, aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué protocolo se cita como alternativa a IP en el nivel de red?",
+          "answers": [
+            "FTP",
+            "TCP",
+            "HDLC",
+            "IPX"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué función atribuyen los apuntes a la capa de enlace de datos?",
+          "answers": [
+            "Presentar los datos al usuario",
+            "Seleccionar la longitud de onda de la fibra",
+            "Proporcionar un canal libre de errores",
+            "Establecer sesiones entre usuarios"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué pareja de tecnologías aparece como ejemplo de nivel de enlace de datos?",
+          "answers": [
+            "TCP y UDP",
+            "Ethernet y Token Ring",
+            "FTP y Telnet",
+            "IP y IPX"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Según el tema, ¿qué capa se encarga de que los segmentos lleguen correctamente al otro extremo?",
+          "answers": [
+            "Transporte",
+            "Física",
+            "Presentación",
+            "Aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué servicio se atribuye a TCP en la comparación con UDP de los apuntes?",
+          "answers": [
+            "Entrega sin orden garantizado y con posibles pérdidas",
+            "Transmisión de bits sin tramas",
+            "Encaminamiento independiente de cada paquete",
+            "Entrega ordenada y libre de errores"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué característica se asocia a UDP en los apuntes?",
+          "answers": [
+            "Reserva recursos de QoS antes de transmitir",
+            "Opera en la capa física",
+            "Puede haber pérdidas o errores y no se garantiza entrega ordenada",
+            "Siempre garantiza orden y ausencia de errores"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué capa del modelo OSI gestiona el control de diálogo y los puntos de sincronización?",
+          "answers": [
+            "Enlace",
+            "Sesión",
+            "Red",
+            "Física"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué función corresponde a la capa de presentación según el tema?",
+          "answers": [
+            "Representación y codificación de los datos",
+            "Selección de rutas IP",
+            "Transmisión de bits por cable",
+            "Reserva de un circuito dedicado"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué ejemplo de codificación aparece asociado a la capa de presentación?",
+          "answers": [
+            "CSMA/CD",
+            "Bluetooth",
+            "Fast Ethernet",
+            "UTF-8"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué capa del modelo OSI es la más próxima a la interacción con el usuario?",
+          "answers": [
+            "Enlace",
+            "Red",
+            "Aplicación",
+            "Física"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué conjunto de protocolos aparece como ejemplo de la capa de aplicación en la tabla del tema?",
+          "answers": [
+            "RS232, T1 y fibra",
+            "Telnet, FTP y correo",
+            "IP, IPX y X.25",
+            "TCP, UDP y ATM"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿En qué orden aparecen las tres primeras capas OSI de abajo hacia arriba?",
+          "answers": [
+            "Física, enlace de datos, red",
+            "Red, enlace de datos, física",
+            "Enlace de datos, física, transporte",
+            "Física, transporte, aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Según los apuntes, ¿desde qué nivel debe comenzar el diseño de una red estable?",
+          "answers": [
+            "Nivel 7, aplicación",
+            "Nivel 5, sesión",
+            "Nivel 4, transporte",
+            "Nivel 1, físico"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En el esquema TCP/IP frente a OSI, ¿qué capas OSI se agrupan en la aplicación de TCP/IP?",
+          "answers": [
+            "Red y transporte",
+            "Enlace y transporte",
+            "Aplicación, presentación y sesión",
+            "Física, enlace y red"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué capa TCP/IP se corresponde con la capa de red del modelo OSI en el esquema?",
+          "answers": [
+            "Transporte",
+            "Red",
+            "Aplicación",
+            "Acceso al medio"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Según los apuntes, ¿qué medio tiene problemas de diafonía y sensibilidad al ruido?",
+          "answers": [
+            "Par de cobre",
+            "Fibra óptica",
+            "Transmisión óptica en vacío",
+            "Ninguno de los anteriores"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cómo varía, según la diapositiva de par de cobre, la velocidad alcanzable al aumentar la distancia?",
+          "answers": [
+            "Siempre aumenta",
+            "Permanece idéntica sin límite",
+            "Solo depende de la capa de aplicación",
+            "En general disminuye"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Cuál es la frecuencia indicada para cable UTP de categoría 3?",
+          "answers": [
+            "Hasta 100 MHz",
+            "Hasta 1 GHz",
+            "Hasta 16 MHz",
+            "Hasta 20 MHz"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué categoría UTP se relaciona en los apuntes con 100 MHz y Fast Ethernet?",
+          "answers": [
+            "Categoría 2",
+            "Categoría 5",
+            "Categoría 3",
+            "Categoría 4"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué categorías se asocian a Gigabit Ethernet a 1 Gbps en los apuntes?",
+          "answers": [
+            "5E y 6",
+            "3 y 4",
+            "1 y 2",
+            "Solo categoría 3"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué impedancias características se mencionan para los dos tipos de cable coaxial?",
+          "answers": [
+            "10 y 100 ohmios",
+            "25 y 125 ohmios",
+            "100 y 150 ohmios",
+            "50 y 75 ohmios"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué aplicación histórica del coaxial aparece en los apuntes?",
+          "answers": [
+            "Codificación UTF-8",
+            "Encaminamiento IP",
+            "Transmisión telefónica de gran distancia",
+            "Conexión Bluetooth entre periféricos"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué alcance sin repetidor se cita para la fibra monomodo en los apuntes?",
+          "answers": [
+            "Hasta 3.000 km",
+            "Hasta 30 km",
+            "Hasta 30 m",
+            "Hasta 300 m"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es una dificultad práctica de la fibra óptica señalada en el tema?",
+          "answers": [
+            "Los empalmes",
+            "La diafonía entre pares de cobre",
+            "La necesidad de apantallar con STP",
+            "La ausencia de ancho de banda"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En transmisión inalámbrica direccional, ¿qué condición destaca el tema?",
+          "answers": [
+            "Emisión uniforme en todas direcciones",
+            "Uso obligatorio de cable coaxial",
+            "Recepción únicamente sin antenas",
+            "Alineamiento cuidadoso de las antenas"
+          ],
+          "correct": 3
+        }
+      ]
     }
   ]
 };
