@@ -613,6 +613,312 @@ const tema2 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t2-3",
+      "nombre": "Test T2.3 - Ethernet clásica, tramas y Manchester",
+      "preguntas": [
+        {
+          "question": "¿Quiénes diseñaron e implementaron la primera LAN Ethernet en Xerox PARC según los apuntes?",
+          "answers": [
+            "Norman Abramson y Roberts",
+            "Bob Metcalfe y David Boggs",
+            "Vint Cerf y Bob Kahn",
+            "Claude Shannon y Alan Turing"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿En qué año sitúan los apuntes la primera LAN Ethernet de Xerox PARC?",
+          "answers": [
+            "1970",
+            "1973",
+            "1976",
+            "1983"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué velocidad tenía la primera red Ethernet de Xerox PARC mencionada en el tema?",
+          "answers": [
+            "1 Mbps",
+            "3 Mbps",
+            "10 Mbps",
+            "100 Mbps"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué medio empleaba aquella primera Ethernet de Xerox PARC?",
+          "answers": [
+            "Fibra óptica multimodo",
+            "Par trenzado sin apantallar",
+            "Cable coaxial largo y grueso",
+            "Radio de 2,4 GHz"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué tres empresas participaron en la especificación Ethernet de 10 Mbps publicada en 1978?",
+          "answers": [
+            "Xerox, DEC e Intel",
+            "IBM, Cisco y Apple",
+            "Microsoft, HP y Nokia",
+            "Xerox, IBM y Motorola"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿En qué año se convirtió Ethernet en el estándar IEEE 802.3, según los apuntes?",
+          "answers": [
+            "1976",
+            "1978",
+            "1983",
+            "1995"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es la longitud máxima de segmento indicada para Thick Ethernet?",
+          "answers": [
+            "100 m",
+            "185 m",
+            "500 m",
+            "2000 m"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuántos equipos podía conectar como máximo un segmento Thick Ethernet, según la diapositiva?",
+          "answers": [
+            "10",
+            "30",
+            "64",
+            "100"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Cuál es la longitud máxima indicada para un segmento Thin Ethernet?",
+          "answers": [
+            "85 m",
+            "100 m",
+            "185 m",
+            "500 m"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuántos ordenadores se indican como máximo en un segmento Thin Ethernet?",
+          "answers": [
+            "10",
+            "30",
+            "100",
+            "255"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué conectores se mencionan para Thin Ethernet?",
+          "answers": [
+            "RJ-45",
+            "LC",
+            "BNC",
+            "SC"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué dispositivo permitía unir segmentos coaxiales para alcanzar mayores distancias en Ethernet clásica?",
+          "answers": [
+            "Router",
+            "Repetidor",
+            "Cortafuegos",
+            "Servidor DHCP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿A qué capa OSI pertenece un repetidor Ethernet según los apuntes?",
+          "answers": [
+            "Física",
+            "Enlace de datos",
+            "Red",
+            "Transporte"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la función de un repetidor descrita en el tema?",
+          "answers": [
+            "Decidir rutas IP entre redes",
+            "Filtrar tramas por MAC",
+            "Recibir, amplificar y retransmitir señales",
+            "Traducir nombres DNS"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué técnica de codificación se estudia expresamente en la sección de Ethernet clásica?",
+          "answers": [
+            "Manchester",
+            "8b/10b exclusivamente",
+            "QAM-256",
+            "OFDM"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué característica básica permite recuperar el reloj en una señal codificada con Manchester?",
+          "answers": [
+            "Cada bit contiene una transición a mitad del intervalo",
+            "Todos los bits 1 se transmiten sin transición",
+            "El receptor necesita una señal de reloj separada",
+            "La señal solo puede transmitirse por fibra"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué dos formatos de trama Ethernet compara la diapositiva de la subcapa MAC?",
+          "answers": [
+            "Ethernet DIX e IEEE 802.3",
+            "IPv4 e IPv6",
+            "Token Ring y Token Bus",
+            "TCP y UDP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En Ethernet clásica con CSMA/CD, ¿qué representa 2τ?",
+          "answers": [
+            "El tiempo de transmisión de una dirección MAC",
+            "El tiempo máximo de ida y vuelta de propagación relevante para detectar una colisión",
+            "La duración de una trama de 2 bytes",
+            "El intervalo entre dos direcciones IP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué ocurre con el intervalo de contención al aumentar la longitud del cable, según los apuntes?",
+          "answers": [
+            "Disminuye siempre",
+            "No cambia",
+            "Aumenta",
+            "Se hace cero"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Por qué el estándar Ethernet fija una longitud máxima de cable en el análisis de rendimiento?",
+          "answers": [
+            "Para limitar el retardo de propagación y el intervalo de contención",
+            "Para que todas las IP sean privadas",
+            "Para impedir el uso de switches",
+            "Para aumentar el tamaño de la dirección MAC"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué variables aparecen en la reformulación del rendimiento Ethernet propuesta en los apuntes?",
+          "answers": [
+            "Solo direcciones IP y máscaras",
+            "Longitud de trama, ancho de banda, longitud del cable y velocidad de propagación",
+            "Únicamente número de routers",
+            "Solo número de puertos TCP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En la arquitectura Ethernet con concentrador central descrita en el tema, ¿cómo se conecta cada estación?",
+          "answers": [
+            "A un cable dedicado hasta el concentrador",
+            "Directamente a todos los demás equipos",
+            "Mediante un único anillo sin concentrador",
+            "A través de un satélite"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué ventaja de mantenimiento aporta el cableado hacia un concentrador central?",
+          "answers": [
+            "Hace más fácil añadir y retirar estaciones",
+            "Elimina toda necesidad de cableado",
+            "Convierte automáticamente Ethernet en una WAN",
+            "Obliga a cambiar las direcciones MAC"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Por qué un hub no incrementa la capacidad agregada de una Ethernet compartida?",
+          "answers": [
+            "Porque crea una red IP distinta por puerto",
+            "Porque se comporta como un medio compartido equivalente al cable largo clásico",
+            "Porque cifra cada trama",
+            "Porque solo admite fibra óptica"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué ocurre con el rendimiento disponible por estación en una red con hub cuando se añaden muchas estaciones activas?",
+          "answers": [
+            "Aumenta sin límite",
+            "Permanece idéntico en cualquier carga",
+            "Tiende a deteriorarse por compartir el medio",
+            "Se multiplica por el número de puertos"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué dispositivo propone el tema para superar las limitaciones de capacidad de los hubs?",
+          "answers": [
+            "Switch",
+            "Repetidor coaxial",
+            "Módem analógico",
+            "Terminador BNC"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué debe determinar un switch Ethernet para reenviar correctamente una trama?",
+          "answers": [
+            "Qué trama corresponde a qué estación de destino",
+            "Qué aplicación usa más memoria",
+            "Qué máscara tiene el servidor DNS",
+            "Qué usuario inició sesión"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué ventaja respecto a las colisiones atribuyen los apuntes a Ethernet conmutada?",
+          "answers": [
+            "El switch aumenta las colisiones",
+            "Las colisiones dejan de producirse en enlaces conmutados apropiados",
+            "El switch exige usar ALOHA",
+            "Las colisiones se trasladan a la capa de aplicación"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál de estas afirmaciones diferencia correctamente un hub de un switch?",
+          "answers": [
+            "Ambos seleccionan siempre el destino MAC de cada trama",
+            "El hub repite señales; el switch puede dirigir tramas al puerto correspondiente",
+            "El hub enruta IP y el switch no trabaja con tramas",
+            "El switch es un repetidor de capa física sin aprendizaje"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué afirmación resume la evolución tratada en la sección Ethernet del tema?",
+          "answers": [
+            "De enlaces coaxiales compartidos a conexiones centralizadas y conmutación",
+            "De Ethernet a redes exclusivamente inalámbricas",
+            "De redes conmutadas a un único coaxial obligatorio",
+            "De direcciones MAC a direcciones telefónicas"
+          ],
+          "correct": 0
+        }
+      ]
     }
   ]
 };
