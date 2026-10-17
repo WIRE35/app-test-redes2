@@ -1225,6 +1225,312 @@ const tema3 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t3-5",
+      "nombre": "Test T3.5 - Repaso global del Tema 3",
+      "preguntas": [
+        {
+          "question": "Una estación A/24 envía datos a otra IP situada fuera de su subred. ¿Qué MAC pone como destino en la primera trama Ethernet?",
+          "answers": [
+            "La MAC de la interfaz de su router de salida",
+            "La MAC del host remoto",
+            "La MAC de difusión FF:FF:FF:FF:FF:FF",
+            "La MAC del servidor DNS"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En el diálogo indirecto A → router → C, ¿qué campos permanecen normalmente iguales al atravesar el router?",
+          "answers": [
+            "Las MAC de origen y destino de la trama",
+            "Las direcciones IP de origen y destino del datagrama",
+            "La MAC de destino y el CRC Ethernet",
+            "Las MAC de origen y destino y el TTL"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si A y B están en la misma subred IP y conectados por un switch, ¿qué necesita A para enviarles una trama unicast?",
+          "answers": [
+            "Conocer la MAC del router de otra red",
+            "Fragmentar siempre el datagrama IP",
+            "Resolver la MAC de B, normalmente mediante ARP",
+            "Consultar una ruta BGP"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En una red Ethernet con un switch sin VLAN y cuatro puertos activos, ¿qué ocurre con una trama de difusión enviada por uno de ellos?",
+          "answers": [
+            "Solo llega al puerto de la MAC de destino aprendida",
+            "El switch la descarta porque no tiene destino unicast",
+            "Se envía exclusivamente al router por obligación",
+            "Se reenvía por los otros puertos de ese dominio de difusión"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Se conectan dos hubs entre sí y cada uno tiene tres ordenadores. ¿Cuántos dominios de colisión forman, suponiendo una única LAN compartida?",
+          "answers": [
+            "Uno",
+            "Dos",
+            "Tres",
+            "Seis"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Se conectan dos switches Ethernet sin VLAN entre sí y cada uno tiene tres equipos, todos en enlaces dedicados. ¿Qué sucede con el dominio de difusión?",
+          "answers": [
+            "Se convierte en seis dominios de difusión",
+            "Sigue siendo uno, salvo que intervenga un dispositivo o configuración que lo separe",
+            "Se elimina por completo",
+            "Cada switch siempre crea una red IP distinta"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué dispositivo de los estudiados divide tanto dominios de colisión como de difusión?",
+          "answers": [
+            "Un hub",
+            "Un repetidor",
+            "Un router",
+            "Un patch panel"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es la función principal de un patch panel en un armario de comunicaciones?",
+          "answers": [
+            "Aprender direcciones MAC y filtrar tramas",
+            "Calcular rutas entre subredes IP",
+            "Traducir protocolos de aplicación",
+            "Organizar y terminar conexiones de cableado de forma pasiva"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un repetidor recibe una señal degradada y la regenera para extender el medio. ¿En qué capa OSI trabaja?",
+          "answers": [
+            "Capa física",
+            "Capa de red",
+            "Capa de transporte",
+            "Capa de aplicación"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué información aprende un switch Ethernet para construir su tabla de conmutación?",
+          "answers": [
+            "La dirección IP de destino y el TTL",
+            "La dirección MAC de origen y el puerto de entrada de las tramas",
+            "El nombre DNS del emisor",
+            "La dirección MAC de destino y el número de saltos IP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Un switch recibe una trama unicast cuya MAC destino aún no figura en su tabla. ¿Qué hace habitualmente?",
+          "answers": [
+            "La envía solo por el puerto de entrada",
+            "La convierte automáticamente en un datagrama IP",
+            "La inunda por los demás puertos del mismo dominio de difusión",
+            "La bloquea siempre como maliciosa"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué ventaja de Store-and-Forward frente a Cut-Through se destaca al conmutar tramas?",
+          "answers": [
+            "No necesita recibir ningún byte antes de transmitir",
+            "Siempre elimina las colisiones de otros hubs",
+            "Sustituye al protocolo ARP",
+            "Puede comprobar la trama completa antes de reenviarla"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En un switch Cut-Through, ¿cuándo puede empezar el reenvío?",
+          "answers": [
+            "Cuando ha leído suficiente cabecera para identificar el destino",
+            "Solo después de recibir y validar toda la trama",
+            "Únicamente al terminar un temporizador de ARP",
+            "Después de que el router confirme la ruta IP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué caracteriza al método de conmutación Fragment Free?",
+          "answers": [
+            "Espera exactamente 1500 bytes de datos",
+            "Espera al menos los primeros 64 bytes antes de reenviar",
+            "No utiliza direcciones MAC",
+            "Reenvía sin leer la dirección destino"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Una consulta ARP pregunta por la MAC correspondiente a una IP local desconocida. ¿Cómo se distribuye normalmente la solicitud?",
+          "answers": [
+            "Como unicast a todos los routers de Internet",
+            "Como un datagrama dirigido a 127.0.0.1",
+            "Como difusión Ethernet en la LAN",
+            "Como difusión IP global entre subredes"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Para qué sirve la caché ARP descrita en el tema?",
+          "answers": [
+            "Para almacenar rutas de todas las redes de Internet",
+            "Para traducir nombres DNS en direcciones IP",
+            "Para eliminar la necesidad de direcciones Ethernet",
+            "Para reutilizar temporalmente asociaciones IP–MAC y evitar consultas repetidas"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Si el host destino está fuera de la subred, ¿para qué dirección IP debe resolver ARP el emisor antes del primer salto?",
+          "answers": [
+            "La IP de la interfaz local del router de salida",
+            "La IP del host remoto en cualquier caso",
+            "La IP del servidor web del campus",
+            "La IP de difusión limitada 255.255.255.255"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué indica una ruta por defecto en una tabla de encaminamiento?",
+          "answers": [
+            "Una ruta exclusiva hacia todos los hosts de la LAN",
+            "El siguiente salto para destinos que no coinciden con rutas más específicas",
+            "Que el router ya no necesita direcciones IP",
+            "La dirección MAC de todos los equipos"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál de estas afirmaciones sobre rutas entre dos extremos es correcta?",
+          "answers": [
+            "Las rutas de ida y vuelta deben ser idénticas",
+            "Un router nunca usa rutas por defecto",
+            "La ruta de A a B puede ser distinta de la de B a A",
+            "Todas las rutas se eligen usando solo direcciones MAC"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "En una tabla de rutas classless, ¿qué dato permite distinguir prefijos de diferente longitud?",
+          "answers": [
+            "El CRC de la trama Ethernet",
+            "El número de puertos del switch",
+            "La dirección MAC del emisor",
+            "La máscara o longitud de prefijo asociada a la red destino"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué significa el bit DF del encabezado IPv4?",
+          "answers": [
+            "Que el datagrama no debe fragmentarse",
+            "Que todos los fragmentos son los últimos",
+            "Que la trama se enviará en difusión",
+            "Que el datagrama usa DHCP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué significa MF=1 en un fragmento IPv4?",
+          "answers": [
+            "Que es necesariamente el último fragmento",
+            "Que después de ese fragmento quedan más fragmentos del datagrama",
+            "Que no puede existir fragmentación",
+            "Que el paquete se ha reenviado por multicast"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿En qué unidades se expresa el desplazamiento de fragmento (fragment offset) de IPv4?",
+          "answers": [
+            "En bits individuales",
+            "En bloques de 64 bytes",
+            "En bloques de 8 bytes",
+            "En paquetes de 1500 bytes"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un datagrama IPv4 de 2020 bytes totales (20 de cabecera y 2000 de datos) atraviesa un enlace con MTU 1500, sin opciones. ¿Cuántos fragmentos se requieren?",
+          "answers": [
+            "Uno",
+            "Tres",
+            "Cuatro",
+            "Dos"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Para el datagrama de 2000 bytes de datos y cabecera IPv4 de 20 bytes, con MTU 1500, ¿cuántos bytes de datos puede llevar como máximo el primer fragmento no final?",
+          "answers": [
+            "1480 bytes",
+            "1500 bytes",
+            "1490 bytes",
+            "1460 bytes"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si el primer fragmento IPv4 transporta 1480 bytes de datos, ¿qué desplazamiento (fragment offset) tendrá el siguiente fragmento?",
+          "answers": [
+            "1480",
+            "185",
+            "180",
+            "186"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Una subred IPv4 /27 dispone de cuántas direcciones utilizables para hosts, bajo el esquema convencional de red y difusión?",
+          "answers": [
+            "32",
+            "62",
+            "30",
+            "14"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es la dirección de red del host 192.168.10.77/26?",
+          "answers": [
+            "192.168.10.0",
+            "192.168.10.77",
+            "192.168.10.128",
+            "192.168.10.64"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué técnica permite asignar prefijos de distinta longitud a subredes con diferentes necesidades de hosts?",
+          "answers": [
+            "VLSM",
+            "CSMA/CD",
+            "ARP",
+            "Manchester"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Según los apuntes, ¿para qué se utiliza una pasarela (gateway) de traducción entre redes heterogéneas?",
+          "answers": [
+            "Para regenerar únicamente señales eléctricas de capa física",
+            "Para adaptar protocolos o formatos de comunicación entre sistemas distintos",
+            "Para reemplazar siempre al switch de acceso",
+            "Para conectar dos cables mediante un panel pasivo"
+          ],
+          "correct": 1
+        }
+      ]
     }
   ]
 };
