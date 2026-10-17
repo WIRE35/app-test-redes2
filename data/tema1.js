@@ -613,6 +613,312 @@ const tema1 = {
           "correct": 3
         }
       ]
+    },
+    {
+      "id": "t1-3",
+      "nombre": "Test T1.3 - Repaso global y razonamiento",
+      "preguntas": [
+        {
+          "question": "En una comunicación, varios usuarios envían datos por el mismo enlace alternando sus paquetes. ¿Qué técnica se está empleando?",
+          "answers": [
+            "Conmutación de circuitos con reserva permanente",
+            "Conmutación de paquetes",
+            "Conexión física exclusiva por usuario",
+            "Transmisión sin nodos intermedios"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Una empresa necesita reservar recursos de calidad de servicio durante una comunicación y liberar esos recursos al finalizar. ¿Qué modalidad del tema encaja mejor?",
+          "answers": [
+            "Datagrama IP",
+            "Enlace de difusión sin dirección",
+            "Circuito virtual",
+            "Topología en bus"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Dos paquetes de la misma comunicación llegan al destino por rutas distintas. ¿Con qué modalidad resulta compatible esta situación?",
+          "answers": [
+            "Datagrama",
+            "Circuito virtual con ruta fijada",
+            "Circuito dedicado telefónico",
+            "Conexión punto a punto directa obligatoria"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un paquete atraviesa varios routers porque el origen y el destino no tienen enlace directo. ¿Qué concepto de una WAN ilustra?",
+          "answers": [
+            "La ausencia de subredes",
+            "La conexión exclusiva de hosts sin routers",
+            "La difusión obligatoria a todos los hosts",
+            "La comunicación mediante nodos de enrutamiento intermedios"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "En una red de difusión, una estación recibe una trama dirigida a otra. ¿Qué determina que no sea su destinataria?",
+          "answers": [
+            "La longitud del cable",
+            "El campo de dirección de destino",
+            "El número de routers",
+            "La distancia geográfica"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué combinación coincide con la clasificación por extensión geográfica de los apuntes?",
+          "answers": [
+            "PAN—país; WAN—habitación",
+            "MAN—metro cuadrado; LAN—continente",
+            "LAN—edificio o campus; MAN—ciudad",
+            "WAN—solo una habitación; PAN—continente"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una red de sensores personales conectados mediante ZigBee se clasificaría, según los ejemplos del tema, como:",
+          "answers": [
+            "PAN",
+            "MAN",
+            "WAN",
+            "Red de circuito virtual"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Una infraestructura de fibra hasta el hogar desplegada por una ciudad es un ejemplo del tema de:",
+          "answers": [
+            "PAN",
+            "LAN exclusivamente",
+            "Red de par trenzado local",
+            "MAN"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué propiedad NO figura entre las características habituales de una LAN presentadas en el tema?",
+          "answers": [
+            "Propiedad privada",
+            "Alcance continental de miles de kilómetros",
+            "Alta velocidad",
+            "Mayor fiabilidad"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Se cambia el cableado de una red sin modificar cómo se comunican lógicamente los equipos. ¿Qué distinción explica la situación?",
+          "answers": [
+            "WAN frente a MAN",
+            "Circuito frente a paquete",
+            "Topología física frente a lógica",
+            "STP frente a UTP"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál de las siguientes formas aparece en la clasificación de topologías LAN de los apuntes?",
+          "answers": [
+            "Árbol",
+            "Datagrama",
+            "Circuito virtual",
+            "TCP"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Una LAN combina varias formas de interconexión en una sola estructura. ¿Qué topología de las mostradas describe mejor el caso?",
+          "answers": [
+            "Solo anillo",
+            "Solo bus",
+            "Punto a punto obligatorio",
+            "Mixta"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Dos enlaces emplean el mismo tipo de cable, pero señales distintas. ¿Qué afirmación se ajusta a los apuntes?",
+          "answers": [
+            "La señal nunca influye en la transmisión",
+            "La transmisión depende del medio y de la señal",
+            "Solo influye el tamaño de la LAN",
+            "La distancia deja de importar"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En un medio guiado, ¿qué elemento destacan los apuntes como especialmente importante para las características de transmisión?",
+          "answers": [
+            "La orientación de la antena",
+            "El nombre de la aplicación",
+            "El propio medio de transmisión",
+            "El número de sesiones OSI"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué problema justifica trenzar los conductores de un cable de par trenzado?",
+          "answers": [
+            "Reducir el efecto de las interferencias",
+            "Eliminar la necesidad de protocolos",
+            "Transformar el cable en fibra óptica",
+            "Crear un circuito virtual"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Se instala cable UTP categoría 5 para una red Fast Ethernet de 100 Mbps. Según la tabla del tema, ¿qué ancho de banda se asocia a esa categoría?",
+          "answers": [
+            "16 MHz",
+            "20 MHz",
+            "1 MHz",
+            "100 MHz"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un cable de par trenzado incorpora pantalla protectora. ¿Cómo se denomina en el tema?",
+          "answers": [
+            "UTP",
+            "STP",
+            "Coaxial de 75 ohmios",
+            "Fibra monomodo"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Para un enlace expuesto a fuertes interferencias electromagnéticas, ¿qué medio presenta inmunidad a ellas según el tema?",
+          "answers": [
+            "Par de cobre sin trenzar",
+            "Cable UTP de categoría 3",
+            "Fibra óptica",
+            "Enlace de radio omnidireccional"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuál es una limitación práctica que sí se menciona para la fibra óptica?",
+          "answers": [
+            "La dificultad de realizar empalmes",
+            "La diafonía entre pares de cobre",
+            "La necesidad de antenas alineadas",
+            "La imposibilidad de enlaces metropolitanos"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Un enlace inalámbrico necesita cubrir múltiples receptores en distintas direcciones desde una antena emisora. ¿Qué modalidad se describe?",
+          "answers": [
+            "Direccional con haz enfocado",
+            "Par trenzado STP",
+            "Fibra monomodo",
+            "Omnidireccional"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un técnico modifica el formato de los datos de un protocolo. ¿Qué característica del protocolo está modificando principalmente?",
+          "answers": [
+            "Temporización",
+            "Sintaxis",
+            "Extensión geográfica",
+            "Topología física"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Un protocolo define cómo se gestionan errores y qué mensajes de control deben intercambiarse. ¿A qué característica corresponde?",
+          "answers": [
+            "Sintaxis",
+            "Temporización exclusivamente",
+            "Semántica",
+            "Medio físico"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Un protocolo establece el orden de envío y el control de flujo de los mensajes. ¿Qué característica destaca el tema?",
+          "answers": [
+            "Temporización",
+            "Topología",
+            "Impedancia",
+            "Difusión"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué capa OSI se relaciona con el encaminamiento entre redes y utiliza IP como ejemplo?",
+          "answers": [
+            "Sesión",
+            "Presentación",
+            "Enlace de datos",
+            "Red"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Si un problema se refiere a tramas y a la fiabilidad del enlace entre equipos, ¿qué nivel OSI es el más relacionado?",
+          "answers": [
+            "Aplicación",
+            "Enlace de datos",
+            "Sesión",
+            "Presentación"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Un servicio debe asegurar la entrega fiable de extremo a extremo; ¿qué capa y ejemplo encajan con la tabla resumen del tema?",
+          "answers": [
+            "Red y UTF-8",
+            "Físico y FTP",
+            "Transporte y TCP",
+            "Presentación y RS232"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "Una aplicación necesita representar texto mediante UTF-8. ¿Con qué capa OSI lo relacionan los apuntes?",
+          "answers": [
+            "Presentación",
+            "Red",
+            "Enlace de datos",
+            "Físico"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Durante una comunicación se establecen puntos de sincronización y se controla el diálogo. ¿Qué capa OSI interviene?",
+          "answers": [
+            "Aplicación",
+            "Físico",
+            "Red",
+            "Sesión"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "Un usuario utiliza FTP para transferir archivos. ¿Qué capa OSI incluye FTP entre sus ejemplos?",
+          "answers": [
+            "Transporte",
+            "Aplicación",
+            "Presentación",
+            "Enlace"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "En el esquema comparativo TCP/IP–OSI del tema, ¿qué afirmación es correcta?",
+          "answers": [
+            "TCP/IP conserva siete capas idénticas a OSI",
+            "TCP/IP no tiene capa de transporte",
+            "La aplicación TCP/IP agrupa aplicación, presentación y sesión de OSI",
+            "La capa de red OSI se corresponde con la capa física TCP/IP"
+          ],
+          "correct": 2
+        }
+      ]
     }
   ]
 };
