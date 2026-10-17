@@ -5,3 +5,5 @@ Versión inicial basada en la aplicación SIRH. Incluye 41 preguntas del primer 
 Abrir `index.html` o publicar el contenido del repositorio en GitHub Pages.
 
 Las respuestas se conservan tal como están marcadas en el archivo original, sin revisión académica.
+
+URL . https://wire35.github.io/app-test-redes2/
