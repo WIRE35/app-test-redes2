@@ -1,1 +1,1 @@
-const bancoPreguntas = [parcial1, tema1, tema2];
+const bancoPreguntas = [parcial1, tema1, tema2, tema3];
