@@ -7,28 +7,29 @@ const test = tema.tests.find(t => t.id === testId);
 
 let basePreguntas = [];
 
-if (test.tipo === "aleatorio") {
-  tema.tests.forEach((t) => {
-    if (t.preguntas) {
-      basePreguntas = basePreguntas.concat(t.preguntas);
-    }
-  });
-
-  basePreguntas = shuffleArray(basePreguntas).slice(0, test.cantidad);
-
-} else if (test.tipo === "aleatorio-global") {
-  bancoPreguntas.forEach((temaActual) => {
-    temaActual.tests.forEach((testActual) => {
-      if (testActual.preguntas) {
-        basePreguntas = basePreguntas.concat(testActual.preguntas);
-      }
+function elegirPreguntas() {
+  if (test.tipo === "simulacro-parcial1") {
+    // Reparto equilibrado según la extensión de los tres temas.
+    const reparto = [{ id: "tema1", cantidad: 10 }, { id: "tema2", cantidad: 15 }, { id: "tema3", cantidad: 15 }];
+    const seleccion = [];
+    reparto.forEach(({ id, cantidad }) => {
+      const bloque = bancoPreguntas.find(t => t.id === id);
+      if (!bloque) throw new Error("No se encuentra el banco " + id);
+      const disponibles = bloque.tests.flatMap(t => t.preguntas || []);
+      if (disponibles.length < cantidad) throw new Error("No hay suficientes preguntas en " + id);
+      seleccion.push(...shuffleArray(disponibles).slice(0, cantidad));
     });
-  });
-
-  basePreguntas = shuffleArray(basePreguntas).slice(0, test.cantidad);
-
-} else {
-  basePreguntas = test.preguntas;
+    return shuffleArray(seleccion);
+  }
+  if (test.tipo === "aleatorio") {
+    const disponibles = tema.tests.flatMap(t => t.preguntas || []);
+    return shuffleArray(disponibles).slice(0, test.cantidad);
+  }
+  if (test.tipo === "aleatorio-global") {
+    const disponibles = bancoPreguntas.flatMap(t => t.tests.flatMap(x => x.preguntas || []));
+    return shuffleArray(disponibles).slice(0, test.cantidad);
+  }
+  return test.preguntas;
 }
 
 let questions = [];
@@ -59,6 +60,7 @@ function shuffleArray(array) {
 }
 
 function prepareQuestions() {
+  basePreguntas = elegirPreguntas();
   questions = shuffleArray(basePreguntas).map((question) => {
     const answersWithCorrectInfo = question.answers.map((answer, index) => {
       return {
