@@ -1225,6 +1225,312 @@ const tema2 = {
           "correct": 0
         }
       ]
+    },
+    {
+      "id": "t2-5",
+      "nombre": "Test T2.5 - Fast Ethernet, Gigabit y repaso general",
+      "preguntas": [
+        {
+          "question": "¿Qué velocidad nominal identifica a Fast Ethernet?",
+          "answers": [
+            "10 Mb/s",
+            "100 Mb/s",
+            "1 Gb/s",
+            "10 Gb/s"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué velocidad nominal identifica a Gigabit Ethernet?",
+          "answers": [
+            "100 Mb/s",
+            "1.000 Mb/s",
+            "10.000 Mb/s",
+            "10 Mb/s"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es la velocidad nominal de 10 Gigabit Ethernet?",
+          "answers": [
+            "10 Mb/s",
+            "100 Mb/s",
+            "1 Gb/s",
+            "10 Gb/s"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué estándar IEEE se asocia a Fast Ethernet?",
+          "answers": [
+            "IEEE 802.3u",
+            "IEEE 802.11ac",
+            "IEEE 802.3ab exclusivamente",
+            "IEEE 802.1Q"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué estándar IEEE se asocia a 1000BASE-T sobre par trenzado?",
+          "answers": [
+            "IEEE 802.3u",
+            "IEEE 802.3ab",
+            "IEEE 802.11",
+            "IEEE 802.1D"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es una meta explícita de Gigabit Ethernet según los apuntes?",
+          "answers": [
+            "Cambiar el formato de trama Ethernet",
+            "Usar direcciones MAC de 128 bits",
+            "Multiplicar por diez el rendimiento de Fast Ethernet",
+            "Exigir acuse de recibo por cada trama"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué longitud de dirección MAC pretendió conservar Gigabit Ethernet?",
+          "answers": [
+            "16 bits",
+            "32 bits",
+            "48 bits",
+            "128 bits"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué se buscó mantener en Gigabit Ethernet respecto de Ethernet anterior?",
+          "answers": [
+            "El formato de trama y sus tamaños mínimo y máximo",
+            "El cable coaxial como único medio",
+            "La necesidad de un hub compartido",
+            "La velocidad fija de 10 Mb/s"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué servicio de entrega se mantiene como objetivo en Gigabit Ethernet?",
+          "answers": [
+            "Datagramas sin acuse de recibo",
+            "Circuitos reservados con confirmación",
+            "Conexiones TCP obligatorias",
+            "Tramas con acuse físico individual"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "Si una trama Ethernet contiene una dirección MAC de destino de difusión, ¿qué modalidad representa?",
+          "answers": [
+            "Unidifusión",
+            "Difusión",
+            "Multidifusión IP exclusivamente",
+            "Circuito virtual"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Cuál es la diferencia nominal de velocidad entre Fast Ethernet y Gigabit Ethernet?",
+          "answers": [
+            "Dos veces",
+            "Cinco veces",
+            "Diez veces",
+            "Cien veces"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Cuántas veces supera 10 Gigabit Ethernet a Gigabit Ethernet en velocidad nominal?",
+          "answers": [
+            "2",
+            "10",
+            "100",
+            "1000"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué significa el número 100 en 100BASE-TX?",
+          "answers": [
+            "100 metros obligatorios",
+            "100 Mb/s nominales",
+            "100 dispositivos máximos",
+            "100 bytes por trama"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué indica BASE en una denominación como 1000BASE-T?",
+          "answers": [
+            "Transmisión en banda base",
+            "Enlace satelital",
+            "Solo fibra monomodo",
+            "Conmutación de circuitos"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué medio físico utiliza 1000BASE-T?",
+          "answers": [
+            "Par trenzado de cobre",
+            "Cable coaxial grueso exclusivamente",
+            "Enlace de radio FM",
+            "Fibra óptica obligatoria"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué familia de medios puede utilizar Gigabit Ethernet además del cobre?",
+          "answers": [
+            "Fibra óptica",
+            "Solo enlaces de microondas",
+            "Únicamente cable telefónico sin pares",
+            "Solo cable paralelo"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué dispositivo permite que cada estación disponga de su propio dominio de colisión en una Ethernet conmutada?",
+          "answers": [
+            "Hub",
+            "Repetidor",
+            "Switch",
+            "Conector BNC"
+          ],
+          "correct": 2
+        },
+        {
+          "question": "¿Qué efecto tiene un hub en una red Ethernet compartida?",
+          "answers": [
+            "Elimina todas las colisiones",
+            "Comparte el medio entre los equipos conectados",
+            "Aprende direcciones MAC y filtra tramas",
+            "Convierte todas las tramas en paquetes IP"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué ventaja tiene un enlace Ethernet conmutado punto a punto en full dúplex?",
+          "answers": [
+            "No necesita CSMA/CD para resolver colisiones",
+            "Debe usar paso de testigo",
+            "Aumenta los choques de tramas",
+            "Obliga a emplear cable coaxial"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Por qué el límite de longitud de cable importa en Ethernet compartida con CSMA/CD?",
+          "answers": [
+            "Porque el retardo de propagación afecta a la detección de colisiones",
+            "Porque determina la longitud de las direcciones IP",
+            "Porque cambia el número de puertos TCP",
+            "Porque define la codificación de caracteres"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué magnitud representa 2τ en el análisis de colisiones de Ethernet?",
+          "answers": [
+            "Tiempo de ida y vuelta de propagación",
+            "Tiempo de transmisión de una contraseña",
+            "Número de tramas recibidas",
+            "Doble de la velocidad de enlace"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "En una Ethernet clásica compartida, ¿qué sucede si dos estaciones transmiten simultáneamente?",
+          "answers": [
+            "Se produce una colisión",
+            "Ambas tramas se entregan sin interferencia",
+            "Se crea automáticamente una VLAN",
+            "El router asigna una dirección MAC nueva"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál de estas afirmaciones describe mejor la evolución de Ethernet clásica a conmutada?",
+          "answers": [
+            "Se sustituyen todos los formatos de trama",
+            "Se pasa de un medio compartido a enlaces dedicados hacia un switch",
+            "Se elimina el uso de direcciones MAC",
+            "Se obliga a usar una topología física en anillo"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué mejora aporta un switch frente a un hub en el envío de una trama unicast conocida?",
+          "answers": [
+            "La reenvía solo por el puerto de destino apropiado",
+            "La replica siempre a todos los puertos",
+            "La convierte obligatoriamente en una trama de difusión",
+            "Desactiva la capa de enlace"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Cuál es la unidad de información que conmuta normalmente un switch Ethernet?",
+          "answers": [
+            "Trama",
+            "Segmento TCP exclusivamente",
+            "Mensaje DNS",
+            "Proceso de usuario"
+          ],
+          "correct": 0
+        },
+        {
+          "question": "¿Qué afirmación sobre 10 Gigabit Ethernet es correcta?",
+          "answers": [
+            "Tiene velocidad nominal inferior a Fast Ethernet",
+            "Es una evolución de la familia Ethernet",
+            "Exige que las MAC midan 128 bits",
+            "Se basa obligatoriamente en hubs coaxiales"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "Si un enlace pasa de 100 Mb/s a 1 Gb/s, ¿qué ocurre con el tiempo ideal de transmisión de una trama del mismo tamaño?",
+          "answers": [
+            "Se multiplica por diez",
+            "Se divide aproximadamente entre diez",
+            "No cambia",
+            "Se duplica"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué característica NO se buscó cambiar al diseñar Gigabit Ethernet, según los objetivos del tema?",
+          "answers": [
+            "La velocidad nominal",
+            "El esquema de direcciones MAC de 48 bits",
+            "El rendimiento",
+            "La capacidad del enlace"
+          ],
+          "correct": 1
+        },
+        {
+          "question": "¿Qué tecnología de las siguientes ofrece mayor velocidad nominal?",
+          "answers": [
+            "Ethernet clásica de 10 Mb/s",
+            "Fast Ethernet",
+            "Gigabit Ethernet",
+            "10 Gigabit Ethernet"
+          ],
+          "correct": 3
+        },
+        {
+          "question": "¿Qué conjunto resume mejor la evolución tratada en el Tema 2?",
+          "answers": [
+            "Ethernet clásica, Ethernet conmutada, Fast Ethernet, Gigabit y 10 Gigabit Ethernet",
+            "Token Ring, ATM y Frame Relay exclusivamente",
+            "Wi-Fi, Bluetooth y NFC exclusivamente",
+            "IP, TCP, UDP y DNS exclusivamente"
+          ],
+          "correct": 0
+        }
+      ]
     }
   ]
 };
