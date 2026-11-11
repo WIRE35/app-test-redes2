@@ -16,3 +16,7 @@ Abre `index.html` para elegir entre Parcial 1, Parcial 2 y Parcial 3. La web es 
 
 ## Probar sin tocar main
 Crea la rama `feature/parciales-v2`, sube los archivos de este ZIP a esa rama y abre un pull request hacia `main` **sin fusionarlo**. Puedes probar localmente abriendo `index.html`, o publicar la rama en un GitHub Pages de prueba independiente. GitHub Pages del repositorio principal normalmente sigue publicando `main` hasta que se cambie su configuración.
+
+
+## URL
+https://wire35.github.io/app-test-redes2/index.html
