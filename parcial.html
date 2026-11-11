@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redes II — Parcial</title><link rel="stylesheet" href="styles.css"></head><body><main class="container">
+<a class="back-link" href="index.html">← Elegir otro parcial</a><header class="header"><span class="eyebrow">REDES II</span><h1 id="partialTitle">Parcial</h1><p id="partialDescription"></p></header><section id="menu" class="menu"></section></main>
+<script src="data/parcial1.js"></script><script src="data/tema1.js"></script><script src="data/tema2.js"></script><script src="data/tema3.js"></script><script src="data/simulacro.js"></script><script src="data/parcial2.js"></script><script src="preguntas.js"></script>
+<script>
+const partial = new URLSearchParams(location.search).get('parcial') || '1';
+const settings = {
+ '1': {title:'Parcial 1', description:'Exámenes anteriores, entrenamientos por temas y simulacro.', ids:['parcial1','tema1','tema2','tema3','simulacro']},
+ '2': {title:'Parcial 2', description:'Temas 4, 5, 6, 7 y 8 · Estamos preparando los test.', ids:['parcial2','tema4','tema5','tema6','tema7','tema8','simulacro2']},
+ '3': {title:'Parcial 3', description:'Apartado reservado para el próximo parcial.', ids:[]}
+};
+const config = settings[partial];
+if (!config) { location.replace('index.html'); } else {
+ document.title = 'Redes II — ' + config.title;
+ document.getElementById('partialTitle').textContent = config.title;
+ document.getElementById('partialDescription').textContent = config.description;
+ const menu = document.getElementById('menu');
+ const blocks = bancoPreguntas.filter(t => config.ids.includes(t.id));
+ blocks.forEach(tema => {
+   const card=document.createElement('div'); card.className='tema-card';
+   const title=document.createElement('h2'); title.textContent=tema.tema; card.appendChild(title);
+   tema.tests.forEach(test=>{
+     const link=document.createElement('a'); link.className='test-link'; link.textContent=test.nombre;
+     link.href=`test.html?parcial=${partial}&tema=${encodeURIComponent(tema.id)}&test=${encodeURIComponent(test.id)}`;
+     card.appendChild(link);
+   }); menu.appendChild(card);
+ });
+ if (!blocks.length || blocks.every(b=>!b.tests.length)) {
+   const empty=document.createElement('div');empty.className='tema-card empty-state';
+   const h=document.createElement('h2');h.textContent=partial==='3'?'Próximamente':'Preparando los test';
+   const t=document.createElement('p');t.textContent=partial==='3'?'Este apartado ya está reservado. Lo activaremos cuando llegue el tercer parcial.':'La estructura está lista para añadir los exámenes y los entrenamientos de los temas 4 a 8.';
+   empty.append(h,t);menu.appendChild(empty);
+ }
+}
+</script></body></html>
