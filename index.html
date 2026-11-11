@@ -1,49 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>App Test Redes 2</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <main class="container">
-    <header class="header">
-      <h1>App Test Redes 2</h1>
-      <p>Selecciona un examen real o practica por temas</p>
-    </header>
-
-    <section id="menu" class="menu"></section>
-  </main>
-
-  <script src="data/parcial1.js"></script>
-  <script src="data/tema1.js"></script>
-  <script src="data/tema2.js"></script>
-  <script src="data/tema3.js"></script>
-  <script src="data/simulacro.js"></script>
-  <script src="preguntas.js"></script>
-  <script>
-    const menu = document.getElementById("menu");
-
-    bancoPreguntas.forEach((tema) => {
-      const card = document.createElement("div");
-      card.classList.add("tema-card");
-
-      const title = document.createElement("h2");
-      title.textContent = tema.tema;
-      card.appendChild(title);
-
-      tema.tests.forEach((test) => {
-        const link = document.createElement("a");
-        link.textContent = test.nombre;
-        link.classList.add("test-link");
-        link.href = `test.html?tema=${tema.id}&test=${test.id}`;
-        card.appendChild(link);
-      });
-
-      menu.appendChild(card);
-    });
-  </script>
-
-</body>
-</html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Redes II — Seleccionar parcial</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="container"><header class="header"><span class="eyebrow">PLATAFORMA DE TEST</span><h1>Redes II</h1><p>Elige el parcial que quieres preparar</p></header>
+<section class="partial-grid" aria-label="Parciales">
+<a class="partial-card" href="parcial.html?parcial=1"><span class="partial-number">01</span><span class="status ready">Disponible</span><h2>Parcial 1</h2><p>Temas 1, 2 y 3</p><span class="card-action">Entrar al parcial →</span></a>
+<a class="partial-card" href="parcial.html?parcial=2"><span class="partial-number">02</span><span class="status building">En preparación</span><h2>Parcial 2</h2><p>Temas 4, 5, 6, 7 y 8</p><span class="card-action">Entrar al parcial →</span></a>
+<a class="partial-card" href="parcial.html?parcial=3"><span class="partial-number">03</span><span class="status future">Próximamente</span><h2>Parcial 3</h2><p>Contenido pendiente</p><span class="card-action">Ver apartado →</span></a>
+</section><footer class="site-footer">Redes II · Preparación de exámenes</footer></main></body></html>

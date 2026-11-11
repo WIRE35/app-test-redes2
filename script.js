@@ -3,7 +3,15 @@ const temaId = params.get("tema");
 const testId = params.get("test");
 
 const tema = bancoPreguntas.find(t => t.id === temaId);
-const test = tema.tests.find(t => t.id === testId);
+const test = tema?.tests.find(t => t.id === testId);
+const parcialId = params.get('parcial') || (['parcial2','tema4','tema5','tema6','tema7','tema8','simulacro2'].includes(temaId) ? '2' : '1');
+const backUrl = `parcial.html?parcial=${parcialId}`;
+document.getElementById('backToPartial').href = backUrl;
+document.getElementById('resultBackToPartial').href = backUrl;
+if (!tema || !test) {
+  document.getElementById('quiz').innerHTML = '<h1>Test no disponible</h1><p>No se ha encontrado el test solicitado.</p><a class="test-link" href="' + backUrl + '">Volver al parcial</a>';
+  throw new Error('Test no encontrado: ' + temaId + '/' + testId);
+}
 
 let basePreguntas = [];
 

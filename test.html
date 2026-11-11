@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Test</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <main class="container">
-    <a href="index.html" class="back-link">← Volver al menú</a>
+    <a href="parcial.html?parcial=1" class="back-link" id="backToPartial">← Volver al parcial</a>
 
     <section id="quiz">
       <h1 id="testTitle"></h1>
@@ -26,7 +27,7 @@
       <p id="score"></p>
 
       <button onclick="restartQuiz()" class="next-btn">Reintentar</button>
-      <a href="index.html" class="test-link">Volver al menú</a>
+      <a href="parcial.html?parcial=1" class="test-link" id="resultBackToPartial">Volver al parcial</a>
     </section>
   </main>
 
@@ -35,6 +36,7 @@
   <script src="data/tema2.js"></script>
   <script src="data/tema3.js"></script>
   <script src="data/simulacro.js"></script>
+  <script src="data/parcial2.js"></script>
   <script src="preguntas.js"></script>
   <script src="script.js"></script>
 </body>
