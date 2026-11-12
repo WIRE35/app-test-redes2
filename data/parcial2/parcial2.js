@@ -2,5 +2,5 @@
 const parcial2 = {
   id: "parcial2",
   tema: "Exámenes anteriores — Parcial 2",
-  tests: [examenParcial2_2025]
+  tests: [examenParcial2_2025, examenParcial2_AntiguoA, examenParcial2_AntiguoB]
 };
