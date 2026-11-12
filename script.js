@@ -29,6 +29,25 @@ function elegirPreguntas() {
     });
     return shuffleArray(seleccion);
   }
+  if (test.tipo === "simulacro-parcial2") {
+    // Mismo mecanismo que el primer parcial: muestra aleatoria por tema y mezcla final.
+    const reparto = [
+      { id: "tema4", cantidad: 8 },
+      { id: "tema5", cantidad: 12 },
+      { id: "tema6", cantidad: 8 },
+      { id: "tema7", cantidad: 6 },
+      { id: "tema8", cantidad: 6 }
+    ];
+    const seleccion = [];
+    reparto.forEach(({ id, cantidad }) => {
+      const bloque = bancoPreguntas.find(t => t.id === id);
+      if (!bloque) throw new Error("No se encuentra el banco " + id);
+      const disponibles = bloque.tests.flatMap(t => t.preguntas || []);
+      if (disponibles.length < cantidad) throw new Error("No hay suficientes preguntas en " + id);
+      seleccion.push(...shuffleArray(disponibles).slice(0, cantidad));
+    });
+    return shuffleArray(seleccion);
+  }
   if (test.tipo === "aleatorio") {
     const disponibles = tema.tests.flatMap(t => t.preguntas || []);
     return shuffleArray(disponibles).slice(0, test.cantidad);
