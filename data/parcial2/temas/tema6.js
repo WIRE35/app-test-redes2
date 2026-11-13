@@ -1,6 +1,6 @@
 const tema6 = {
   "id": "tema6",
-  "tema": "Tema 6 — Tests de entrenamiento",
+  "tema": "Tema 6 — VLAN y enlaces troncales",
   "tests": [
     {
       "id": "t6-1",
