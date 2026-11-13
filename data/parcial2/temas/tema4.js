@@ -1,6 +1,6 @@
 const tema4 = {
   "id": "tema4",
-  "tema": "Tema 4 — Tests de entrenamiento",
+  "tema": "Tema 4 — Redes jerárquicas",
   "tests": [
     {
       "id": "t4-1",
