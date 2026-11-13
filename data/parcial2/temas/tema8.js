@@ -1,6 +1,6 @@
 const tema8 = {
   "id": "tema8",
-  "tema": "Tema 8 — Tests de entrenamiento",
+  "tema": "Tema 8 — Enrutamiento entre VLAN",
   "tests": [
     {
       "id": "t8-1",
